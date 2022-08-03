@@ -29,7 +29,7 @@ class MatchesAdapter(private val list: List<MatchesData>) : RecyclerView.Adapter
             duration.text = "duration = ${item.duration}"
             startTime.text = "start time = ${item.start_time}"
             radiantName.text = "radiant name = ${item.radiant_name}"
-            direName.text = "radiant name = ${item.dire_name}"
+            direName.text = "dire name = ${item.dire_name}"
             radiantScore.text = "radiant scope = ${item.radiant_score}"
             direScore.text = "dire score = ${item.dire_score}"
             radiantWin.text = "radiant win = ${item.radiant_win}"

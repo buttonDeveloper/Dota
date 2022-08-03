@@ -3,9 +3,13 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/mainFragment">
+    app:startDestination="@id/searchPlayerFragment">
     <fragment
         android:id="@+id/mainFragment"
         android:name="com.example.example.ui.fragments.MainFragment"
         android:label="MainFragment" />
+    <fragment
+        android:id="@+id/searchPlayerFragment"
+        android:name="com.example.example.ui.fragments.players.SearchPlayerFragment"
+        android:label="SearchPlayerFragment" />
 </navigation>

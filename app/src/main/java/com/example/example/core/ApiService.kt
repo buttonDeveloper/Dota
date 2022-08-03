@@ -39,6 +39,7 @@ class ApiService {
         const val token = "CB73BBF1EBD88BF1236903EE2DCFE123"
         private const val BASE_URL = "https://api.opendota.com/api"
         const val MATCHES = "$BASE_URL/proMatches"
+        const val PLAYERS_SEARCH = "$BASE_URL/search"
         const val MATCHES_LIVE = "$BASE_URL/live"
     }
 }
