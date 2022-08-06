@@ -40,6 +40,7 @@ class ApiService {
         private const val BASE_URL = "https://api.opendota.com/api"
         const val MATCHES = "$BASE_URL/proMatches"
         const val PLAYERS_SEARCH = "$BASE_URL/search"
+        const val PLAYER_INFO = "$BASE_URL/players"
         const val MATCHES_LIVE = "$BASE_URL/live"
     }
 }

@@ -1,9 +1,11 @@
 package com.example.example.ui.fragments.players
 
 import android.annotation.SuppressLint
+import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import android.view.animation.AnimationUtils
+import androidx.navigation.Navigation
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.example.example.R
@@ -35,7 +37,14 @@ class SearchPlayerAdapter(private var list: List<PlayerData>) : RecyclerView.Ada
             lastMatchTime.text = "last match time = ${item.lastMitchTime}"
             similarity.text = "similarity = ${item.similarity}"
             Glide.with(this.root.context).load(item.avatar).centerCrop().into(image)
+            holder.itemView.rootView.setOnClickListener {
+                val bundle = Bundle()
+                bundle.putLong("id", item.accountId!!)
+                Navigation.findNavController(holder.itemView)
+                    .navigate(R.id.action_searchPlayerFragment_to_playerInfoFragment, bundle)
+            }
         }
+
     }
 
     override fun getItemCount() = list.size

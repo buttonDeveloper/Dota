@@ -11,5 +11,13 @@
     <fragment
         android:id="@+id/searchPlayerFragment"
         android:name="com.example.example.ui.fragments.players.SearchPlayerFragment"
-        android:label="SearchPlayerFragment" />
+        android:label="SearchPlayerFragment" >
+        <action
+            android:id="@+id/action_searchPlayerFragment_to_playerInfoFragment"
+            app:destination="@id/playerInfoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/playerInfoFragment"
+        android:name="com.example.example.ui.fragments.player.PlayerInfoFragment"
+        android:label="PlayerInfoFragment" />
 </navigation>
