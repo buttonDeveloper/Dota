@@ -1,7 +1,7 @@
-package com.example.example.data.player.cloud
+package com.example.example.data.player.info.cloud
 
-import com.example.example.data.player.MMREstimateData
-import com.example.example.data.player.PlayerProfileData
+import com.example.example.data.player.info.MMREstimateData
+import com.example.example.data.player.info.PlayerProfileData
 import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable
 

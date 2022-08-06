@@ -1,4 +1,4 @@
-package com.example.example.data.player
+package com.example.example.data.player.info
 
 import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable

@@ -1,4 +1,4 @@
-package com.example.example.data.player
+package com.example.example.data.player.info
 
 data class PlayerInfoData(
     val soloRank: Long? = null,

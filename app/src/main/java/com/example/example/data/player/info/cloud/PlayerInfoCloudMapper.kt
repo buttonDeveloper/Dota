@@ -1,6 +1,6 @@
-package com.example.example.data.player.cloud
+package com.example.example.data.player.info.cloud
 
-import com.example.example.data.player.PlayerInfoData
+import com.example.example.data.player.info.PlayerInfoData
 
 class PlayerInfoCloudMapper {
 

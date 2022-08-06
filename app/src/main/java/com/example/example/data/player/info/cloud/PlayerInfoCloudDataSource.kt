@@ -1,4 +1,4 @@
-package com.example.example.data.player.cloud
+package com.example.example.data.player.info.cloud
 
 import android.util.Log
 import com.example.example.core.ApiService
