@@ -50,6 +50,9 @@ class PlayerInfoFragment @Inject constructor() : Fragment() {
                 binding.textViewPercent.text = "Winrate: ${getWinrate(matches.wins!!, matches.loses!!)}%"
             }
         }
+        lifecycleScope.launch(Dispatchers.IO) {
+            viewModel.getPlayer()
+        }
     }
 
     private fun getWinrate(wins: Long, loses: Long): String {
